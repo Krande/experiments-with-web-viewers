@@ -1,0 +1,15 @@
+[project]
+name = "web-viewers"
+version = "0.1.0"
+description = "A series of experiments with web viewers"
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[environments]
+main = { features = ["base"], solve-group = "main"}
+
+[feature.base.dependencies]
+nodejs = "*"
+
+[feature.base.tasks]
+build = { cmd = ["npm", "run", "build"], cwd = "src/vtk-wasm-viewer" }

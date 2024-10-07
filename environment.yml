@@ -1,0 +1,5 @@
+name: web-viewers
+channels:
+  - conda-forge
+dependencies:
+  - nodejs

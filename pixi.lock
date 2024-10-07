@@ -1,0 +1,25 @@
+version: 5
+environments:
+  default:
+    channels:
+    - url: https://conda.anaconda.org/conda-forge/
+    packages: {}
+  main:
+    channels:
+    - url: https://conda.anaconda.org/conda-forge/
+    packages:
+      win-64:
+      - conda: https://conda.anaconda.org/conda-forge/win-64/nodejs-22.9.0-h57928b3_0.conda
+packages:
+- kind: conda
+  name: nodejs
+  version: 22.9.0
+  build: h57928b3_0
+  subdir: win-64
+  url: https://conda.anaconda.org/conda-forge/win-64/nodejs-22.9.0-h57928b3_0.conda
+  sha256: 6d74f0dbb91eb2049199ba801a3db67965f990aef44084f9ae51a1f70c2996f6
+  md5: 6aa54ed90a643a11a005491ff316b1c4
+  license: MIT
+  license_family: MIT
+  size: 25378221
+  timestamp: 1726657153171
